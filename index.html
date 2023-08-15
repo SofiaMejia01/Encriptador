@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+
+        <div class = "header">
+        <img class="header__logo" src="./imagenes/logo.png" alt="logo de alura" >
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea id="ingresoTexto" class="ingreso__texto" placeholder="Ingrese texto aqui"></textarea>
+                <div class="left__footer">
+                    <img src="./imagenes/exclamacion.png" alt="">
+                    <span class="left__info">Solo letras minusculas y sin acentos</span>
+                   
+                    <div class="left__botones">
+                        <button id="botonEncriptar" class="botones boton__encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="botones boton__desencriptar">Desencriptar</button>
+                    </div>
+                   
+                </div>
+               
+            </div>
+         
+            <div id="right" class="right ajustar">
+                <img id ="muneco" class="muneco" src="./imagenes/muñeco.png" alt="">
+                <textarea id="mensajeFinal" class="mensaje__final " placeholder="Ningun mensaje fue encontrado"></textarea>
+                <p id="rightInfo" class="right__info">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button id="botonCopiar" class="botones boton__copiar oculto">Copiar</button>
+            </div>
+        </div>
+       
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
